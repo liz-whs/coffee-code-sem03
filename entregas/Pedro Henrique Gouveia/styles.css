@@ -1,0 +1,219 @@
+* { 
+    box-sizing: border-box; 
+}
+
+:root {
+    /* Cores */
+    --color-primary: #376f63;
+    --color-background: #b9d4ce;
+    --color-text: #241c18;
+    --color-error: #b3261e;
+    /* Tipografia */
+    --font-family-base: 'Inter', sans-serif;
+    --font-size-base: 1rem;
+    --font-size-heading: 1.75rem;
+    --line-height-base: 1.5;
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    /* Radius */
+    --radius-md: 8px;
+    --bg: #ffffff;
+    --text: #181818;
+
+}
+
+[data-theme="dark"] {
+    --bg: #181818;
+    --text: #ffffff;
+}
+
+body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    background-color: var(--color-background);
+    color: var(--text);
+}
+
+input {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-md);
+    font-family: var(--font-family-base);
+}
+
+input.login {
+    padding: 10px;
+}
+
+
+input:focus {
+    background-color: #cad8d5;
+}
+
+.enviar {
+ background-color: var(--color-primary);
+ color: white;
+ padding: var(--spacing-sm) var(--spacing-md);
+ border: none;
+ border-radius: var(--radius-md);
+}
+
+.enviar:hover{
+    background-color: #53a896;
+}
+
+.enviar:focus-visible{
+    background-color: #53a896;
+}
+
+
+.campo {
+    background-color: #b9d4ce;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+
+.link-secundario {
+    color: #a18900;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    background-color: white;
+    border: 5px solid;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.card:hover{
+    background-color: rgb(202, 202, 202);
+}
+
+.displaycard {
+    display: grid;
+    grid-template-columns: ifr;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .displaycard {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .displaycard {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: var(--color-primary);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-primary);
+}
+
+#form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #b9d4ce;
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+.p-avatar {
+    font-size: 5rem;
+}
+
+.perfil-topo {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.perfil-fundo {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+}
+
+.topo-dashboard{
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background-color: #376f63;
+    color: white;
+    border-bottom: 2px, solid, black;
+}
+
+.busca-dashboard{
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    font-family: var(--font-family-base);
+    align-items: center;
+    gap: 1rem;
+}
+
+input.busca{
+    border-width: 2px;
+    border-color: #181818;
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    font-family: var(--font-family-base);
+}
+
+button.busca, button.card-button{
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    border-radius: var(--radius-md);
+}
+
+button.busca:hover, button.card-button:hover{
+    background-color: #53a896;
+}
+
+button.busca:focus-visible, button.card-dashboard:focus-visible{
+    background-color: #53a896;
+}
+
+button.card-remove{
+    background-color:#b3261e;
+}
+
+button.card-remove:hover, button.card-remove:focus-visible{
+    background-color: rgb(211, 55, 47);
+}
