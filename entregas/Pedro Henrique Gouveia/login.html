@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="login.js" defer></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <p>wow</p>
+                <p>wow</p>
+                <p>wow</p>
+                <p>wow</p>
+                <p>wow</p>
+            </div>
+            <h1>Entrar</h1>
+            <p>O propósito dessa tela é permitir que o usuário faça login no sistema.</p>
+        </header>
+        <div class="page">
+            <aside class="sidebar">
+
+            </aside>
+            <main>
+                <form id="form-login">
+                    <label for="email">E-mail</label>
+                    <input class="login" type="email" id="email" name="email" placeholder="nome@email.com" required>
+                    <span id="emailErro"></span>       
+                    <label for="senha">Senha</label>
+                    <input class="login" type="password" id="senha" name="senha" placeholder="suasenha123" required>
+                    <span id="senhaErro"></span>
+                    <div class="flex justify-between items-center w-4">
+                        <button class="enviar" type="submit">Entrar</button>
+                    </div>
+                </form>
+                <a href="cadastro.html" class="link-secundario">Não tem uma conta? Cadastre-se aqui.</a>
+            </main>
+            <div class="lista-materias"></div>
+        </div>
+    </body>
+</html>
